@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Aura Design System",
+  "description": "Un diario cognitivo y santuario interactivo de estimulación mental para combatir el Alzheimer, la neblina mental y el declive por trastornos mentales y senectud.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

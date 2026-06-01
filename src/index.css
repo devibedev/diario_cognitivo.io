@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Sora', sans-serif;
+}
+
+/* Custom Scrollbar for Clean Minimalism */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #E0E5EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #B9C6D6;
+  border: 2px solid #E0E5EC;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9AA9BD;
+}
+
+/* Neomorphism Soft-UI Light Calculations */
+.neo-flat {
+  background: #E0E5EC;
+  box-shadow: 8px 8px 16px rgba(163, 177, 198, 0.6), -8px -8px 16px rgba(255, 255, 255, 0.5);
+}
+
+.neo-flat-sm {
+  background: #E0E5EC;
+  box-shadow: 4px 4px 10px rgba(163, 177, 198, 0.5), -4px -4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.neo-flat-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.neo-flat-hover:hover {
+  background: #E5EBF2;
+  box-shadow: 12px 12px 24px rgba(163, 177, 198, 0.7), -12px -12px 24px rgba(255, 255, 255, 0.6);
+  transform: translateY(-4px);
+}
+
+.neo-inset {
+  background: #E0E5EC;
+  box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.6), inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.neo-pill-active {
+  background: #D9E1EB;
+  box-shadow: inset 3px 3px 6px rgba(163, 177, 198, 0.5), inset -3px -3px 6px rgba(255, 255, 255, 0.4);
+}
+
+/* Glassmorphism Classes with light theme frosting */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-heavy {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.glass-panel-hover {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 30px 60px -20px rgba(163, 177, 198, 0.3);
+  transform: translateY(-4px);
+}
+
+/* Color gradients behind things */
+@keyframes fluidGlow1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(60px, -40px) scale(1.15);
+  }
+  66% {
+    transform: translate(-40px, 20px) scale(0.9);
+  }
+}
+
+@keyframes fluidGlow2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1.1);
+  }
+  50% {
+    transform: translate(-50px, 50px) scale(0.95);
+  }
+}
+
+@keyframes fluidGlow3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(0.9);
+  }
+  40% {
+    transform: translate(40px, 30px) scale(1.1);
+  }
+}
+
+.animate-glow-1 {
+  animation: fluidGlow1 16s infinite ease-in-out;
+}
+.animate-glow-2 {
+  animation: fluidGlow2 20s infinite ease-in-out;
+}
+.animate-glow-3 {
+  animation: fluidGlow3 14s infinite ease-in-out;
+}
+
+/* Subtle border light */
+.glass-border-gradient {
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0) 100%);
+}
